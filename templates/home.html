@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Sales Predictor</title>
+    <style>
+        body {
+            background-color: #121212; /* Dark background color */
+            color: #ffffff; /* Light text color */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .animated-heading {
+            font-size: 2.5em;
+            color: #ffcc00; /* Highlighted color */
+            animation: slideIn 1s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .car-section {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .car-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 45%;
+            box-sizing: border-box;
+        }
+
+        .toyota {
+            /* Add background or styles specific to Toyota */
+            background-color: #2ecc71;
+        }
+
+        .bmw {
+            /* Add background or styles specific to BMW */
+            background-color: #3498db;
+        }
+
+        /* Add more styles for other car companies as needed */
+
+        .animated-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #ffcc00; /* Button color */
+            color: #121212; /* Text color on button */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none; /* Remove default link styling */
+        }
+
+        .animated-button:hover {
+            background-color: #ffa500; /* Hover color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="animated-heading">Car Sales Predictor</h1>
+        </header>
+        
+        <section class="car-section">
+            <div class="car-card toyota">
+                <h2>Toyota</h2>
+                <!-- Add more details or images as needed for each car company -->
+            </div>
+            
+            <div class="car-card bmw">
+                <h2>BMW</h2>
+                <!-- Add more details or images as needed for each car company -->
+            </div>
+            
+            <!-- Add more car cards for other companies as needed -->
+        </section>
+
+        <a href="/predict" class="animated-button">Predict Now</a>
+    </div>
+</body>
+</html>
